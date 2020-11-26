@@ -19,9 +19,6 @@
             var userGuess = prompt("Enter r, p, or s to play!");
             userGuess = userGuess.toLowerCase();
 
-            console.log(userGuess);
-            console.log(compGuess);
-
             if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
                 alert("The computer chose " + compGuess);
 
@@ -40,11 +37,8 @@
             }
         }
 
-
-
-
-
-
+        // When the loop is complete, output the 3 different totals to see who won
+        alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal loses: " + loses);
     </script>
 </body>
 </html>
