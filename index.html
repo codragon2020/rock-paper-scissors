@@ -25,11 +25,14 @@
             if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
                 alert("The computer chose " + compGuess);
 
-                if ((userGuess === "r" && compGuess === "s" || 
+                if ((userGuess === "r" && compGuess === "s") || 
                 (userGuess === "p" && compGuess === "r") || 
                 (userGuess === "s" && compGuess === "p")) {
                     wins++;
                     alert("You've won " + wins + " time(s)!");
+                } else if (userGuess === compGuess) {
+                    ties++;
+                    alert("You've tied " + ties + " time(s)!");
                 }
             }
         }
