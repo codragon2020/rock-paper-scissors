@@ -3,48 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, or Scissors</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <script>
-        // An array to store the 3 choices for the computer
-        var compChoices = ["r", "p", "s"];
-
-        var wins = 0;
-        var loses = 0;
-        var ties = 0;
-
-        // Loop to play 10 rounds
-        for (var i = 0; i < 10; i++) {
-            
-            // Storing the computer guess after randomly picking r, p, or s from the choices array
-            var compGuess = compChoices[Math.floor(Math.random() * compChoices.length)];
-
-            // Storing the user's guess and converting to lowercase if they type uppercase letters
-            var userGuess = prompt("Enter r, p, or s to play!");
-            userGuess = userGuess.toLowerCase();
-
-            // The game logic built around the known set of rules for each selected choice
-            if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
-                alert("The computer chose " + compGuess);
-
-                if ((userGuess === "r" && compGuess === "s") || 
-                (userGuess === "p" && compGuess === "r") || 
-                (userGuess === "s" && compGuess === "p")) {
-                    wins++;
-                    alert("You've won " + wins + " time(s)!");
-                } else if (userGuess === compGuess) {
-                    ties++;
-                    alert("You've tied " + ties + " time(s)!");
-                } else {
-                    loses++;
-                    alert("You've lost " + loses + " time(s)!");
-                }
-            }
-        }
-
-        // When the loop is complete, output the 3 different totals to see who won
-        alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal loses: " + loses);
-    </script>
+    <div class="jumbotron" style="background-image: url(./images/9-RPS-example.png)" alt="background-RPS image;" >
+        
+        <script src="app.ts"></script>
+    
+    </div>
 </body>
 </html>
