@@ -1,4 +1,9 @@
-.jumbotron {
+/* body, html {
+    height: 100%;
+} */
+
+
+img {
     background-size: cover;
     background-position: center center;
     margin: 0;
