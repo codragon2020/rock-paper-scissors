@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var compChoices = ["r", "p", "s"];
+
+        var wins = 0;
+        var loses = 0;
+        var ties = 0;
+
+        for (var i = 0; i < 10; i++) {
+            var compGuess = compChoices[Math.floor(Math.random() * compChoices.length)];
+
+            var userGuess = prompt("Enter r, p, or s to play!");
+            userGuess = userGuess.toLowerCase();
+
+            console.log(userGuess);
+            console.log(compGuess);
+
+            if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+                alert("The computer chose " + compGuess);
+
+                if ((userGuess === "r" && compGuess === "s" || 
+                (userGuess === "p" && compGuess === "r") || 
+                (userGuess === "s" && compGuess === "p")) {
+                    wins++;
+                    alert("You've won " + wins + " time(s)!");
+                }
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
