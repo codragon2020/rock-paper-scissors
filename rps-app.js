@@ -7,8 +7,10 @@ var wins = 0;
 var loses = 0;
 var ties = 0;
 
+var numPlays = prompt("How many times would you like to play?");
+
 // Loop to play 10 rounds
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < numPlays; i++) {
     
     // Storing the computer guess after randomly picking r, p, or s from the choices array
     var compGuess = compChoices[Math.floor(Math.random() * compChoices.length)];
