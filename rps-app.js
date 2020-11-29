@@ -1,5 +1,3 @@
-
-
 // An array to store the 3 choices for the computer
 var compChoices = ["r", "p", "s"];
 
