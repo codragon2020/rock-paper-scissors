@@ -9,3 +9,16 @@ This app is built with Javascript. It was constructed around the same premise of
 Each game is played 10 times. I used a "For" loop to track each round and store the wins, loses, and ties.
 
 Enjoy!
+
+## Link to the site
+
+https://codragon2020.github.io/rock-paper-scissors/
+
+
+This site was made with:
+
+![alt text tech stack](./images/html-css-js.png)
+
+## Screenshot
+
+![rock paper scissors](./images/rock-paper-scissors.png)
