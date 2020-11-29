@@ -10,7 +10,9 @@ This app is built with Javascript. It was constructed around the same premise of
 
 As a player enters the game, they will be prompted to respond with how many times they wish to play. 
 
-The choice comparison is done at the same time, so that the two choices will be evaluated and the player will be awarded 1 point for each win, lose, or tie. A "For" loop is used to track each round and store the wins, loses, and ties. 
+The player will get to choose between rock (r), paper (p), or scissors (s). The screen will then tell the player what the computer chose. The computer's choice is random. After clicking Ok, the user will be awarded a point for the win, lose, or tie. The next round will then begin. Each round is played the same way until the final round completed.
+
+A "For" loop is used to track each round and store the wins, loses, and ties. The final score is displayed at the end of the game.
 
 ### Rules
 
