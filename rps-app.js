@@ -1,3 +1,5 @@
+function globalFunction() {
+
 // An array to store the 3 choices for the computer
 var compChoices = ["r", "p", "s"];
 
@@ -38,3 +40,5 @@ for (var i = 0; i < numPlays; i++) {
 
 // When the loop is complete, output the 3 different totals to see who won
 alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal loses: " + loses);
+
+}
